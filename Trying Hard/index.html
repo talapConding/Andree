@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: ;: ;
+            color: ;
+        }
+        header {
+            text-align: center;
+            background-color: gray;
+            color: white;
+            padding: 2rem 0;
+        }
+        .profile-picture {
+            margin: 1rem auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: float 3s infinite ease-in-out;
+        }
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .profile-picture:hover img {
+            transform: scale(1.1);
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        nav {
+            text-align: center;
+            background: #444;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Jeffrey Andree Espedido</h1>
+    <p> Hi "I am a passionate video editor with a knack for turning raw footage into engaging and compelling stories 
+    
+    </p>
+    <div class="profile-picture">
+        <img src="andree.jpg" alt="Your Profile Picture">
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+   
+
+
+    <!-- Text that will trigger the display of the contact number -->
+<a ="contact-link" onclick="showPhoneNumber()">Contact</a>
+
+<!-- Hidden contact number, which will be shown on click -->
+<div class="contact-info" id="phone-number">
+ 
+  <p> <a href="tel:+1234567890" id="contact-number">09489878517 </a></p>
+</div>
+
+<script>
+    // Initially ensure the contact number is hidden
+    document.getElementById("phone-number").style.display = "none";
+
+    // Function to toggle the phone number visibility
+    function showPhoneNumber() {
+        var phoneNumberSection = document.getElementById("phone-number");
+
+        // Toggle the visibility of the phone number section
+        if (phoneNumberSection.style.display === "none") {
+            phoneNumberSection.style.display = "block";  // Show phone number
+        } else {
+            phoneNumberSection.style.display = "none";  // Hide phone number
+        }
+    }
+</script>
+
+
+
+<section id="about">
+    <h2>About Me</h2>
+    <p >
+      I’m Jeffrey Andree Espedido,a dedicated
+video editor with a deep passion for
+bringing stories to life through powerful,
+visually captivating content. With hands-
+on experience editing a wide range of
+projects—from social media clips to full-
+length videos—I specialize in clean,
+impactful editing that speaks to the
+audience. My style combines precision
+with elegance, ensuring that every
+project is polished and purposeful. I’m
+excited to collaborate with forward-
+thinking teams or companies that value
+creativity and quality in every frame.
+Let’s work together to create something
+unforgettable </p>
+</section>
+
+
+     <section id="My Project">
+      <center><h2>MY Project</h2><center/>
+    <video width="400" height="360" controls>
+        <source src="jeff.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </section>
+    <section id="Contact Me"
+    <h2>Email Me</h2>
+     <p >Andree Espedido@gmail.com</p>
+</section>
+    
+    
+</footer>
+
+</body>
+</html>
